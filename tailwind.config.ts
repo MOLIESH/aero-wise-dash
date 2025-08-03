@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,6 +53,23 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Environmental data colors
+				vegetation: {
+					high: 'hsl(var(--vegetation-high))',
+					medium: 'hsl(var(--vegetation-medium))',
+					low: 'hsl(var(--vegetation-low))'
+				},
+				airQuality: {
+					good: 'hsl(var(--air-quality-good))',
+					moderate: 'hsl(var(--air-quality-moderate))',
+					poor: 'hsl(var(--air-quality-poor))',
+					unhealthy: 'hsl(var(--air-quality-unhealthy))'
+				},
+				zone: {
+					residential: 'hsl(var(--zone-residential))',
+					commercial: 'hsl(var(--zone-commercial))',
+					industrial: 'hsl(var(--zone-industrial))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +80,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-environmental': 'var(--gradient-environmental)',
+				'gradient-data': 'var(--gradient-data)'
+			},
+			boxShadow: {
+				'environmental': 'var(--shadow-environmental)',
+				'card-soft': 'var(--shadow-card)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
